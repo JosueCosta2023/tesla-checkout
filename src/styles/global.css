@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.home {
+    background-image: url('./src/assets/ellipse-257.png');
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+@media (max-width: 768px) {
+}

@@ -1,0 +1,141 @@
+.ranking {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF7F2;
+    margin-bottom: 16rem;
+    height: 700px;
+}
+
+.ranking .rank-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 2rem;
+    max-width: 960px;
+}
+
+.rank-info h2 {
+    font-size: 9rem;
+    font-weight: 900;
+    color: #FF6900;
+}
+
+.rank-info p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 1px;
+}
+
+.ranking img {
+    width: 800px;
+    height: 700px;
+    z-index: 1;
+}
+
+.img-background {
+    background-color: #FF6900;
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    right: 0;
+    border-radius: 0 0 0 650px;
+}
+
+@media (max-width: 1240px) {
+    .ranking {
+        align-items: center;
+    }
+    .ranking .rank-info {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+
+    .rank-info h2 {
+        font-size: 8rem;
+    }
+
+    .rank-info p {
+        font-size: 1.6rem;
+    }
+
+    .ranking img {
+        width: 600px;
+        height: 500px;
+    }
+
+    .img-background {
+        top: 0;
+        width: 430px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .rank-info h2 {
+        font-size: 6rem;
+    }
+
+    .rank-info p {
+        font-size: 1.4rem;
+    }
+
+    .ranking img {
+        width: 500px;
+        height: 410px;
+    }
+
+    .img-background {
+        top: 4.5rem;
+        width: 400px;
+        height: 600px;
+        border-radius: 600px 0px 0px 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rank-info h2 {
+        font-size: 5rem;
+    }
+
+    .rank-info p {
+        font-size: 1.3rem;
+    }
+
+    .ranking img {
+        width: 400px;
+        height: 310px;
+    }
+
+    .img-background {
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ranking {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .rank-info h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .rank-info p {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    .ranking img {
+        width: 360px;
+    }
+
+    .img-background {
+        top: 50rem;
+        width: 100%;
+        height: 200px;
+        border-radius: 200px 200px 0px 0px;
+    }
+}
