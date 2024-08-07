@@ -5,7 +5,7 @@ html {
 }
 
 .home {
-    background-image: url('./src/assets/ellipse-257.png');
+    background-image: url('/ellipse-257.png');
     background-repeat: no-repeat;
     height: 120vh;
 }
