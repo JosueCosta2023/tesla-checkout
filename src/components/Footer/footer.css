@@ -1,11 +1,13 @@
 footer {
-    height: 29vh;
+    height: 31vh;
+    background-color: #F9F9F9;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .footer-logo {
