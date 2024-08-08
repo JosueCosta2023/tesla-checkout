@@ -9,8 +9,10 @@ import code from '../../assets/code.svg'
 export function About() {
     return (
         <section className='about'>
-            <h2>Solução Para Seu E-Commerce</h2>
-            <p className='about-description'>Soluções pensadas para facilitar e inovar a sua experiência como empreendedor digital.</p>
+            <div className="title-about">
+                <h2>Solução Para Seu E-Commerce</h2>
+                <p className='about-description'>Soluções pensadas para facilitar e inovar a sua experiência como empreendedor digital.</p>
+            </div>
 
             <div className='container-about'>
                 <div className='item-about'>

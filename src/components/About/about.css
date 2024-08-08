@@ -16,9 +16,15 @@
     margin-bottom: 1rem;
 }
 
-.about .about-description {
-    font-size: 1.6rem;
+.title-about {
+    text-align: center;
+    padding: 2rem;
     margin-bottom: 6rem;
+}
+
+.about .about-description {
+
+    font-size: 1.6rem;
     color: #969696;
 }
 
