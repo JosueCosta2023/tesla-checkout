@@ -1,0 +1,144 @@
+.register {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 492px;
+    padding: 3.5rem 4rem;
+    box-shadow: 0px 7px 23px 0px #0000000D;
+    border-radius: 15px;
+    transform: translateY(-8rem);
+}
+
+.container-form h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color:#2D3748;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+} 
+
+.form-input label {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.form-input input::placeholder {
+    font-size: 1.4rem;
+    color: #A0AEC0;
+}
+
+.form-input input {
+    border: 1px solid #E2E8F0;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+}
+
+.form-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.form-checkbox .checkbox-input {
+    display: flex;
+    gap: 4px;
+    font-size: 1.2rem;
+    color: #A0AEC0;
+}
+
+input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+    align-self: center;
+    border-radius: 3px;
+    appearance: none;
+    border: 1px solid #A0AEC0;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #FF6900;
+    clip-path: polygon(16% 50%, 34% 68%, 80% 20%, 95% 35%, 34% 100%, 0 65%);
+}
+
+.container-form .button-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container-form button {
+    align-self: center;
+    padding: 12px 14rem;
+    border-radius: 12px;
+    background-color: #FF6900;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-form .button-register a {
+    font-size: 1.4rem;
+    color: #A0AEC0;
+}
+
+.container-form .button-register span {
+    font-size: 1.4rem;
+    color: #FF6900;
+    font-weight: 500;
+}
+
+.form-input .input-error {
+    outline: 1px solid rgb(255, 72, 72);
+}
+
+.error-message {
+    color: rgb(255, 72, 72);
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+.terms {
+    display: flex;
+    justify-content: space-around;
+    height: 5%;
+    width: 100%;
+    font-size: 1.2rem;
+
+}
+
+.terms .terms-tesla {
+    color: #FF6900;
+}
