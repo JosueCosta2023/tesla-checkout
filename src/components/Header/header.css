@@ -45,6 +45,7 @@ header {
 
 .navbar .container-button {
     display: flex;
+    align-items: center;
     gap: 9px;
 }
 
@@ -53,6 +54,7 @@ header {
     padding: 12px 45px;
     cursor: pointer;
     background: #FF6900;
+    border: solid 1px #FF6900;
     color: #fff;
     font-size: 14px;
     font-weight: 900;
@@ -94,7 +96,20 @@ header {
     }
 }
 
+@media (max-width: 960px) {
+    .navbar .nav-menu {
+        gap: 2rem;
+    }
+    .navbar .container-button button {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 840px) {
+    .navbar .container-logo h2 {
+        font-size: 2rem;
+    }
+
     .navbar .container-button button {
         padding: 10px 28px;
     }
