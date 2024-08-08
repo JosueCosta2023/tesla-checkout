@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './header.css'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 export function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -41,11 +42,15 @@ export function Header() {
                     </li>
 
                     <div className='container-button'>
-                        <button className='button-enter'>Entrar</button>
-                        <button className='button-register'>Cadastrar agora</button>
+                        <Link to={`/login`}>
+                            <button className='button-enter'>Entrar</button>
+                        </Link>
+                        <Link to={`/register`}>
+                            <button className='button-register'>Cadastrar agora</button>
+                        </Link>
                     </div>
                 </ul>
-                
+
                 <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span className='bar'></span>
                     <span className='bar'></span>
