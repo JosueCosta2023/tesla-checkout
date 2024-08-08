@@ -35,11 +35,12 @@
 
 .hero .button-hero {
     font-weight: 900;
-    padding: 12px 45px;
+    padding: 14px 45px;
     border-radius: 8px;
     background-color: #FF6900;
     color: #fff;
     margin-bottom: 9rem;
+    cursor: pointer;
 }
 
 @media (max-width: 1440px) {

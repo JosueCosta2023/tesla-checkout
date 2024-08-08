@@ -89,6 +89,7 @@
     padding: 12px 65px;
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .container-items .item-iniciante p {
