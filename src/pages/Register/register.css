@@ -2,15 +2,37 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
+
+.register-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 332px;
+    background-color: black;
+}
+
+.register-banner > img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
 
 .container-form {
     display: flex;
     flex-direction: column;
     background-color: #fff;
     width: 492px;
+    max-width: 90%;
     padding: 3.5rem 4rem;
     box-shadow: 0px 7px 23px 0px #0000000D;
     border-radius: 15px;
@@ -96,17 +118,20 @@ input[type="checkbox"]:checked::after {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    
 }
 
 .container-form button {
-    align-self: center;
-    padding: 12px 14rem;
+    /* align-self: center; */
+    text-align: center;
+    padding: 12px 0px;
     border-radius: 12px;
     background-color: #FF6900;
     color: #fff;
     font-size: 1.4rem;
     font-weight: 700;
     cursor: pointer;
+    width: 100%;
 }
 
 .container-form .button-register a {
@@ -134,9 +159,12 @@ input[type="checkbox"]:checked::after {
     display: flex;
     justify-content: space-around;
     height: 5%;
-    width: 100%;
+    line-height: 28px;
+    flex-wrap: wrap;
+    width: 1024px;
+    max-width: 100%;
     font-size: 1.2rem;
-
+    margin-bottom: 50px;
 }
 
 .terms .terms-tesla {
