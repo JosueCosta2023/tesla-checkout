@@ -1,11 +1,21 @@
 import { useState } from 'react'
 import './prices.css'
+import { X } from 'lucide-react'
 
 export function Prices() {
     const [ isChecked, setIsChecked ] = useState(false)
+    const [ isModalOpen, setIsModalOpen ] = useState(false)
 
     function handleToggle() {
         setIsChecked(!isChecked)
+    }
+
+    function handleModalOpen() {
+        setIsModalOpen(!isModalOpen)
+    }
+
+    function closeModal() {
+        setIsModalOpen(false)
     }
 
     return (
@@ -35,7 +45,7 @@ export function Prices() {
 
                     <h4>Grátis</h4>
                     <span>Taxa de transação 2%</span>
-                    <button>SELECIONAR</button>
+                    <button onClick={handleModalOpen}>SELECIONAR</button>
                 </div>
 
                 <div className='item item-escala'>
@@ -46,7 +56,7 @@ export function Prices() {
 
                     <h4>R$397,<span>00</span><span className='span-mes'>/mês</span></h4>
                     <span>Taxa de transação 1,5%</span>
-                    <button>SELECIONAR</button>
+                    <button onClick={handleModalOpen}>SELECIONAR</button>
                 </div>
 
                 <div className='item item-empresarial'>
@@ -57,8 +67,15 @@ export function Prices() {
 
                     <h4>R$597,<span>00</span><span className='span-mes'>/mês</span></h4>
                     <span>Taxa de transação 1%</span>
-                    <button>SELECIONAR</button>
+                    <button onClick={handleModalOpen}>SELECIONAR</button>
                 </div>
+            </div>
+
+            <div className={`modal ${isModalOpen ? 'active-modal' : ''}`}>
+                <button>
+                    <X className='' onClick={closeModal}/>
+                </button>
+                <div className=''>teste</div>
             </div>
         </section>
     )
