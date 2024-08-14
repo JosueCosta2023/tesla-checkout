@@ -102,7 +102,7 @@ export function Register() {
 
             <div className='terms'>
                 <p>@ 2024, <span className='terms-tesla'>Tesla Checkout LTDA.</span></p>
-                <div>
+                <div className='terms-politics'>
                     <a>Política de Privacidade</a>
                     <a>Termos de Uso</a>
                 </div>
