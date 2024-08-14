@@ -1,5 +1,5 @@
 import './register.css'
-import background from '../../assets/cadastro.png'
+import background from '../../assets/cadastro-white.png'
 import { useForm } from "react-hook-form"
 import validator from 'validator'
 
@@ -12,7 +12,9 @@ export function Register() {
 
     return (
         <div className='register'>
-            <img src={background} alt="lOGO da Tesla Checkout" />
+            <div className="register-banner">
+                <img src={background} alt="lOGO da Tesla Checkout" />
+            </div>
 
             <div className="container-form">
                 <h2>Registre-se agora</h2>
