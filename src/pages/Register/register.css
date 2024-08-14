@@ -87,7 +87,7 @@
     color: #A0AEC0;
 }
 
-input[type='checkbox'] {
+.checkbox-register[type='checkbox'] {
     width: 1rem;
     height: 1rem;
     align-self: center;
@@ -98,7 +98,7 @@ input[type='checkbox'] {
     position: relative;
 }
 
-input[type="checkbox"]:checked::after {
+.checkbox-register[type="checkbox"]:checked::after {
     content: '';
     position: absolute;
     top: 50%;

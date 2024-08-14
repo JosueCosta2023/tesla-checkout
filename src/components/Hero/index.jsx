@@ -10,8 +10,10 @@ export function Hero() {
                     Afaste-se do convencional e do pouco lucrativo. Utilize ferramentas exclusivas para aumentar suas conversões e oferecer experiências únicas aos clientes através do seu novo checkout transparente, com menos burocracia. 📊
                 </p>
             </div>
-            
-            <button className='button-hero'>Começar agora gratuitamente</button>
+
+            <a href="#planos">
+                <button className='button-hero'>Começar agora gratuitamente</button>
+            </a>
             <img className='hero-image' src={dashboard} alt="dashboard" />
         </section>
     )

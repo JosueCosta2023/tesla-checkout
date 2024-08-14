@@ -1,6 +1,7 @@
 import './register.css'
 import background from '../../assets/cadastro-white.png'
 import { useForm } from "react-hook-form"
+import { Link } from 'react-router-dom'
 import validator from 'validator'
 
 export function Register() {
@@ -77,6 +78,7 @@ export function Register() {
                     <div className="form-checkbox">
                         <div className="checkbox-input">
                             <input
+                                className='checkbox-register'
                                 type="checkbox"
                                 name="privacy-policy"
                                 {...register("privacyTerms", {
@@ -96,7 +98,9 @@ export function Register() {
                 </form>
                 <div className='button-register'>
                     <button onClick={() => handleSubmit(onSubmit)()}>CADASTRAR</button>
-                    <a href='#'>Já é usuário do Tesla?<span> Entrar</span></a>
+                    <Link to={`/login`}>
+                        <p>Já é usuário do Tesla?<span> Entrar</span></p>
+                    </Link>
                 </div>
             </div>
 

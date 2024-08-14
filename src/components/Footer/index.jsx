@@ -8,7 +8,7 @@ import youtube from '../../assets/youtube.png'
 export function Footer() {
     return (
         <footer>
-            <div className='footer-container'>
+            <div className='footer-container' id='contato'>
                 <div className='footer-logo'>
                     <img src={logo} alt="logo tesla checkout" />
                     <a to='/'>

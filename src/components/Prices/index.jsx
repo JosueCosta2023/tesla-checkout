@@ -1,8 +1,15 @@
+import { useState } from 'react'
 import './prices.css'
-import toggle from '../../assets/check.png'
+
 export function Prices() {
+    const [ isChecked, setIsChecked ] = useState(false)
+
+    function handleToggle() {
+        setIsChecked(!isChecked)
+    }
+
     return (
-        <section className='prices'>
+        <section className='prices' id='planos'>
             <div className='description-prices'>
                 <h2>Nossos Planos</h2>
                 <p>
@@ -10,11 +17,14 @@ export function Prices() {
                 </p>
             </div>
 
-            <div className='toggle'>
-                <span>Mensal</span>
-                <img src={toggle} alt="toggle" />
-                <span>Anual</span>
-            </div>
+            <label className='switch'>
+                <span className={`switch-text ${!isChecked ? 'active' : ''}`}>Mensal</span>
+                <div className='switch-wrapper'>
+                    <input type="checkbox" name='watch' checked={isChecked} onChange={handleToggle} />
+                    <span className='switch-button'></span>
+                </div>
+                <span className={`switch-text ${isChecked ? 'active' : ''}`}>Anual</span>
+            </label>
 
             <div className='container-items'>
                 <div className='item item-iniciante'>
