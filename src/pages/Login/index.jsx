@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form"
 import "./login.css";
 import validator from "validator";
+import imageLogo from "/src/assets/cadastro-white.png";
 
 
 
@@ -67,7 +68,7 @@ export function Login() {
             </div>
             <div className="content-logo">
                 <a href="/">
-                    <img src="/src/assets/cadastro-white.png" alt="logo" />
+                    <img src={imageLogo} alt="logo" />
                 </a>
             </div>
         </div>
